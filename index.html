@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Kanit:wght@300;400;500&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:wght@300;400&display=swap" rel="stylesheet">
+    <title>Url Shortner</title>
+    <style>
+        #menu:checked + #list {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-[url('/images/background.jpg')] bg-fixed bg-cover font-cabin">
+    <div class="h-screen">
+        <section>
+            <nav class="flex justify-between">
+                <div class="flex p-8 items-center">
+                    <img class="h-12" src="images/logo.png" alt="Url Shorter">
+                    <a href="index.html" class="px-2 font-bold text-lg hover:text-cyan-400 duration-1000">Url Shorter</a>
+                </div>
+                <div class="p-8">
+                    <label for="menu" class="sm:hidden">
+                        <img src="images/Hamburger Menu.svg" class="cursor-pointer">
+                    </label>
+                    <input type="checkbox" class="hidden" id="menu">    
+                    <div id="list" class="hidden sm:flex">
+                        <ul class="sm:flex">
+                            <li class="sm:px-2 py-3 hover:text-cyan-400 hover:text-lg duration-1000 "><a href="#">Log in</a></li>
+                            <li class="sm:px-2 py-3 hover:text-cyan-400 hover:text-lg duration-1000"><a href="#">Sign in</a></li>
+                            <li class="sm:px-2 py-3 hover:text-cyan-400 hover:text-lg duration-1000"><a href="#">Contact Me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section>
+            <div class="flex-col justify-center items-center">
+                <div class="p-12 flex justify-center">
+                    <h1 class="text-6xl">Url Shorter</h1>
+                </div>
+                <div class="flex-col justify-center p-6">
+                    <div class="flex justify-center p-4">
+                        <input placeholder=" Enter Your Link" id="link" class="rounded-lg h-7 focus:border focus:border-cyan-400"  type="text">
+                        <button id="shorting" class="px-3 border-2 ml-3 border-black rounded-lg hover:text-lg hover:text-cyan-400 duration-1000" >Shorting</button>
+                    </div>
+
+                    <div class="flex justify-center py-3">
+                        <input id="theshorterlink" class="rounded-lg h-7" placeholder=" Your Shorter Link" type="text">
+                        <img id="copying" class="px-2 h-7 hover:h-9 duration-700 cursor-pointer" src="images/copylogo.png" alt="Copy">
+                        <img src="images/done.png" class="h-6 hidden" id="copy-done">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <footer>
+                <div class="flex justify-between pt-16 sm:pt-28">
+                    <div class="flex items-center pl-3">
+                        <img class="h-7" src="images/logo.png" alt="Url Shorter">
+                        <a href="index.html" class="px-2 font-bold hover:text-cyan-400 duration-1000">Url Shorter</a>
+                    </div>
+                    <p class="pr-3 text-sm">
+                        All Right Reserved to <a class="hover:text-cyan-400 duration-700" href="https://github.com/aminehalal/">Amine Halal</a> &copy; 2023
+                    </p>    
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
